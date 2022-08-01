@@ -214,7 +214,6 @@ body{
     font-size: 2rem;
     border-radius: 10px;
     transition: 250ms;
-    margin-left: 4rem;
 }
 
 .info-inicial-promo-link:hover{
@@ -231,12 +230,15 @@ body{
 
 @media only screen and (max-width:940px) {
     .info-inicial-promo-titulo{
-        font-size: 3rem;
+        font-size: 2.5rem;
         
     }
 
     .info-inicial-promo-titulo, .info-inicial-promo-subtitulo{
         text-align: center;
+    }
+    .info-inicial-promo-link{
+        margin-left: 2rem;
     }
 }
 

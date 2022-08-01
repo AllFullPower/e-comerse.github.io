@@ -57,9 +57,7 @@
     flex-direction: column;
     height: 85%;
     width: 18%;
-
     background-color: var(--azul-ransparente);
-
     border-radius: 10px;
     transition: 250ms;
     margin: 1rem;
@@ -160,5 +158,23 @@
 
 .esconder{
     display: none;
+}
+
+@media only screen and (max-width:940px){
+    .ver-todos-articulos{
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ver-todos-articulo{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .ver-todos-articulos{
+        margin:auto;
+        align-items: center;
+    }
 }
 

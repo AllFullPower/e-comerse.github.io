@@ -71,7 +71,12 @@ const buscarArticulo = () =>{
     clientServices.listaArticulos().then(articulos => {
         articulos.forEach(articulo => {
             let item = document.createElement('li');
-            item.classList.add('buscador-item', 'swiper-slide')
+            if(screen.width < 920){
+                item.classList.remove('swiper-slide')
+            }else{
+                item.classList.add('swiper-slide')
+            }   
+            item.classList.add('buscador-item');
             item.setAttribute('id', `${articulo.id}`)
             let imgDelete = ''
             let imgEdit = ''
@@ -133,14 +138,20 @@ const buscarArticulo = () =>{
                 breakpoints:{
                     620:{
                         slidesPerView:1,
+                        slidesPerGroup: 1,
+
                         spaceBetween:20,
                     },
                     680:{
-                        slidesPerView:2,
+                        slidesPerView:1,
+                        slidesPerGroup: 1,
+
                         spaceBetween:40,
                     },
                     920:{
-                        slidesPerView:3,
+                        slidesPerView:1,
+                        slidesPerGroup: 1,
+
                         spaceBetween:40,
                     },
                     1240:{
@@ -153,6 +164,7 @@ const buscarArticulo = () =>{
               });
               let span = item.querySelector('.buscador-precio')
               itemServices.descuentoArticulo(articulo.oferta, articulo.descuento,span, articulo.precio)
+    
 
         })
     });
