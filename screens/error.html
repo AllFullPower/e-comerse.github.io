@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/principal/style.css">
+    <link rel="stylesheet" href="../css/pantallas-extra/editado-exitosamente.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+
+
+    <title>E-Comerse</title>
+</head>
+<body>
+    <header class="header-container">
+        <nav class="nav-container">
+            <a href="../index.html" class="img-container"> <img src="/assets/logos/Logo.png" alt=""></a>
+            <div class="nav-items-container">
+                <div class="nav-buscador-container">
+ 
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="agregar-section">
+            <form class="agregar-container" data-editarArticulo>
+                <h1 class="agregar-titulo"> Editado Exitosamente ✔ </h1>
+                
+                <a href="../index.html" class="agregar-boton">Inicio</a>
+
+            </form>
+        </section>
+            
+        <section class="contacto-container">
+            <div class="contacto-box">
+                <div class="contacto-logo">
+                    <img class="logo" src="/assets/logos/Logo.png" alt="">
+                </div>
+                <div class="contacto-links">
+                    <ul class="list-links-container">
+                        <li class="list-links-item"><a class="list-link" href="#">Quienes somos</a></li>
+                        <li class="list-links-item"><a class="list-link" href="#">Politica de privacidad</a></li>
+                        <li class="list-links-item"><a class="list-link" href="#">Programa de fidelidad</a></li>
+                        <li class="list-links-item"><a class="list-link" href="#">Nuestras Tiendas</a></li>
+                        <li class="list-links-item"><a class="list-link" href="#">Quiero ser frenquiciado</a></li>
+                        <li class="list-links-item"><a class="list-link" href="#">Anuncie aqui</a></li>
+                    </ul>
+                </div>
+                <div class="contacto-form-box">
+                    <form class="contacto-form">
+                        <h3 class="form-titulo"> Hable con nosotros</h3>
+                       
+                            <div class="input-container">
+                                <label class="input-label" for="nombre">Nombre</label>
+                                <input class="input input-nombre" type="text" name="nombre" id="nombre" data-input="nombre" required minlength="2" maxlength="16" pattern="[\S\s]{2,16}">
+                                <span class="mensaje-error"></span>
+                            </div>
+    
+               
+                            <div class="input-container">
+                                <label class="input-label" for="mesaje">Mensaje</label>
+                                <textarea class="input input-mensaje" name="mensaje" id="mesaje" cols="30" rows="10" data-input="mensaje" required></textarea>
+                                <span class="mensaje-error"></span>
+                            </div>
+                    
+                        <button class="contacto-form-boton">ENVIAR</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script type="module" src="../java-script/client/validador-inputs.js"></script>
+
+    </main>
+
+    <footer class="footer-container">
+        <p class="footer-derechos"> ©CopyRight - Jefferson Rojas - 2022</p>
+    </footer>
+    
+</body>
+</html>

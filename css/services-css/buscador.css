@@ -1,0 +1,171 @@
+.buscador-container{
+    display: flex;
+    justify-content: center;
+    background-color: #000000c6;
+    border-radius: 0px 0px 12px 12px;
+    border-bottom: 2px solid #7690e4;
+    width: 100%;
+    height: 440px;
+    position: absolute;
+    z-index: 10;
+    margin-top: 32rem;
+}
+
+.buscador-ul-container{
+    width: 80%;
+    height: 100%;
+}
+
+.buscador-ul{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.buscador-item{
+    height: 80%;
+    width: 16% !important;
+}
+
+.buscador-contenido-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul-ransparente);
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.buscador-img-content{
+    display: grid;
+    grid-template-rows:90% 10%;
+    background-color: #111a21;
+    border-radius: 10px;
+    padding-bottom: 4.5rem;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+.buscador-botones{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+}
+
+.buscador-botones-img > img{
+    width: 30px;
+    height:30px;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.buscador-contenido-img{
+    width: 100%;
+    height: 100%;
+}
+.buscador-img{
+    width:100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+
+
+} 
+
+.buscador-contenido{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%; 
+}
+.buscador-titulo{
+    color:  var(--blanco-crema);
+    background-color: var(--azul-oscuro);
+    padding: 0.5rem 0 .5rem .5rem;
+}
+
+
+.buscador-titulo-precio{
+    color: var(--azul-medio-oscuro);
+    font-size: 1.2rem;
+    padding: 0 0 0 0.5rem;
+
+}
+
+.buscador-precio{
+    color: var(--celeste-claro);
+    font-size: 1.3rem;
+    padding: .3rem 0 0 0.5rem;
+
+}
+
+/* SWIPER */
+
+.swiper {
+    width: 90%;
+    height: 100%;
+  }
+
+.swiper-slide {
+    font-size: 18px;
+    margin: 1rem 0px 1rem 0px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    transition: 100ms;
+  }
+
+
+
+.swiper-slide:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+
+.swiper-button-next{
+    transform: scale(1.2);
+    margin-right: 1rem;
+    background-color: #4e99c859;
+    padding: 1rem;
+    border-radius: 25%;
+
+
+  }
+
+.swiper-button-prev{
+    transform: scale(1.2);
+    margin-left: 1rem;
+    background-color: #4e99c859;
+    padding: 1rem;
+    border-radius: 25%;
+
+} 
+
+.swiper-button-prev:hover{
+    background-color: #4e99c8c7;
+    
+}
+
+.swiper-button-next:hover{
+    background-color: #4e99c8c7;
+    
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0px !important;
+}
+.swiper-container{
+    width: 80%;
+    height: 25%;
+    padding-bottom: 1rem;
+    background-color: var(--fondo-celeste);
+}
+
+.esconder{
+    display: none !important;
+}

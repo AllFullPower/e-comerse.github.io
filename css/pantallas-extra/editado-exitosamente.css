@@ -1,0 +1,67 @@
+.agregar-input-label{
+    background-color: var(--azulejo);
+    width: calc(100% - 0.5rem);
+    color: var(--azul-ransparente);
+    font-size: 1.2rem;
+    border-top-right-radius: 12px;
+    padding-left: 0.5rem;
+}
+
+.agregar-section{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agregar-titulo{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    color: var(--celeste-claro);
+    background-color: var(--azul-oscuro);
+    border: 2px solid var(--celeste-claro);
+}
+
+
+.agregar-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-oscuro);
+    border-radius: 12px;
+    margin: 5rem;
+    padding: 3rem;
+}
+
+
+.agregar-boton{
+    padding: 2rem 10rem 2rem 10rem;
+    border-radius: 12px;
+    font-size: 2rem;
+    background-color: #0965dd;
+    border: none;
+    font-weight: bold;
+    color: #FFFCF2;
+    text-decoration: none;
+    transition: 250ms;
+}
+
+.agregar-boton:hover{
+    background-color: #003b89;
+    cursor: pointer;
+}
+
+textarea{
+    resize: none;
+}
+
+.agregar-descripcion{
+    height: 5rem;
+}
+
+

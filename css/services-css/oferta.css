@@ -1,0 +1,163 @@
+/* BOTON */
+
+.agregar-input-container-oferta{
+    display: flex;
+    justify-content: center;
+    min-height: 80px;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+
+}
+
+.agregar-input-container-oferta > label{
+    justify-self: center;
+    height: 80px;
+    background-color: transparent;
+    padding:  0 1.5rem;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 5px 2px #f6ff00;
+
+}
+
+.input-check{
+    display: none;
+}
+
+
+.rail{
+    position: relative;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3rem;
+}
+
+.circle{
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: radial-gradient(circle, rgba(255,248,0,1) 0%, rgba(254,206,10,1) 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+    transition: transform 0.4s;
+}
+
+.indicator{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+    margin-left: 1.2rem;
+}
+
+.agregar-input-container-oferta > label > input:checked ~ .rail > span{
+    transform: translate(54px, -50%);
+}
+
+.agregar-input-container-oferta > label > input:checked ~ .indicator{
+    background-color: #ffff00;
+    box-shadow: 0px 0px 5px 2px #f6ff00;
+
+}
+
+.descuento{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #f6ffcf;
+}
+
+
+
+/* CAJA DE INFORMACION */
+
+.descuento-datos{
+    width: 16rem;
+    height: 25rem;
+    background: linear-gradient(#090907, #050600);
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 0px 2px #32342b;
+    transition: 0.5s;
+}
+
+.descuento-precio-oferta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cantidad-dinero{
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    color: #f6ffcf;
+    border: 2px solid #f6ffcf;
+    background-color: #32342b;;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 6px 1px #4e4e44;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 3px 0px 0px #141503;
+}
+
+.cantidad-dinero::before{
+    content: '$';
+}
+
+.porcentaje-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.input-decuento{
+    background-color: #32342b;
+    padding: 0.2rem;
+    color: #e2e902;
+    text-shadow: 0px 0px 2px  #fff;
+    font-size: 1.2rem;
+    width: 50%;
+    margin-left: 2.9rem;
+}
+
+.procentaje{
+    color: #e2e902;
+    padding: 0.5rem;
+    background-color: #32342b ;
+}
+
+.esconder{
+    display: none;
+}
+
+.oferta{
+    color: #e2e902;
+    font-size: 1.2rem;
+}
+
+.oferta-box{
+    box-shadow: 0px 0px 5px 2px #e2e902;
+}
+
+.descripcion-articulo--oferta{
+    box-shadow: 1px -1px 48px 19px #ffd609bf inset;
+}
+
+.descipcion-articulo-articulo-container--oferta{
+    box-shadow: -3px 0px 31px 7px #ffff09bf;
+}
+
+.descripcion-articulo-titulo--oferta{
+    text-shadow: 0px 0px 12px #ffff09bf;
+}
