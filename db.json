@@ -205,6 +205,16 @@
       "descripcion": "RESPUESTA FRECUENTE  -   20 Hz – 20 kHz\n\nIMPEDANCIA  -   32 Ω (1 kHz)\n\nSENSIBILIDAD  -    96 dB (1 kHz)\n\nTAMAÑO DEL CONDUCTOR - DIÁMETROS (MM)  -   50mm\n\nTIPO DE CONDUCTOR  -   Titanio Razer™ TriForce\n\nAURICULARES  -   Almohadillas Ovaladas\n\nDIÁMETRO DEL AURICULAR INTERNO  -   Ancho: 42 mm / 1,65\"  /  Longitud: 62mm/2,44\"\n\nMATERIAL DE LAS ALMOHADILLAS  -  Tejido termotransferible / Polipiel / Espuma viscoelástica\n\nCANCELACIÓN DE RUIDO  -   Cancelación pasiva de ruido",
       "id": "5e106e41-e4d8-46dc-9395-9d7a487d664e",
       "oferta": false
+    },
+    {
+      "url": "https://extremetechcr.com/tienda/17087-large_default/razer-blackshark-v2x.jpg",
+      "tipo": "Cascos",
+      "nombre": "Ver más grande RAZER BLACKSHARK V2X",
+      "precio": "59.99",
+      "descripcion": "Marca: Razer\n\nAudio: 7.1 Surround\n\nConexion: 3.5mm\n\nCompatible con PC, Mac, PS4, PS5 Xbox One, Nintendo Switch y dispositivos móviles",
+      "id": "7650ef7c-3407-4a70-8b55-f6b5ca845545",
+      "oferta": true,
+      "descuento": "20"
     }
   ]
 }

@@ -12,7 +12,6 @@ newArticuloForm.addEventListener('submit', (e) =>{
     const nombre = document.querySelector("[data-nombre]").value;
     const precio = document.querySelector("[data-precio]").value;
     const descripcion = document.querySelector("[data-descripcion]").value;
-
     clientServices.crearArticulo(url, tipo, nombre, precio, descripcion);
 })
 

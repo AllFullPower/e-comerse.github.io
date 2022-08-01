@@ -51,13 +51,16 @@ body{
 .header-nav-buttons{
     display: flex;
     width: 30%;
-    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+
 }
 
 .nav-items-container{
     display: flex;
     justify-content: space-between;
     width: 100%;
+
 
 }
 
@@ -72,6 +75,7 @@ body{
     color:  var(--blanco-crema);
     background-color: #1a2136;
     border: none;   
+
 }
 
 .nav-buscador{
@@ -83,6 +87,7 @@ body{
     border-radius: 20px;
     border: none;
     padding-left: 1rem;
+
      
 }
 
@@ -137,8 +142,30 @@ body{
     position: absolute;
 }
 
+/*   ----Responsive nav----   */
 
+@media only screen and (max-width:940px) {
+    .header-container, .nav-items-container, .nav-container{
+        flex-direction: column;
+    }
 
+    .header-nav-buttons{
+        align-self: center;
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .header-container{
+        height: 100%;
+    }
+
+    .nav-buscador-container{
+        width: 10rem;
+        margin-top: 1rem;
+        align-self: center;
+    }
+  
+}
 
 /*INFO INICIAL*/
 
@@ -187,6 +214,7 @@ body{
     font-size: 2rem;
     border-radius: 10px;
     transition: 250ms;
+    margin-left: 4rem;
 }
 
 .info-inicial-promo-link:hover{
@@ -197,6 +225,19 @@ body{
 .info-inicial-img{
     width: 100%;
     height: 100%;
+}
+
+/* --- Info Inicial Responsive -- */
+
+@media only screen and (max-width:940px) {
+    .info-inicial-promo-titulo{
+        font-size: 3rem;
+        
+    }
+
+    .info-inicial-promo-titulo, .info-inicial-promo-subtitulo{
+        text-align: center;
+    }
 }
 
 
@@ -220,6 +261,7 @@ body{
     width: 80%;
     height: 80%;
     background-color: #192238;
+    flex-direction: column;
 }
 
 .contacto-logo{
@@ -244,7 +286,7 @@ body{
 
 .contacto-form-box{
     height: 50%;
-    
+   
 }
 
 .form-titulo{
@@ -321,6 +363,24 @@ body{
     background-color: #4479ff;
     transform: scale(1.1);
     cursor: pointer;
+}
+
+/* --- Contacto Responsive ---- */
+
+@media only screen and (max-width:940px){
+    .contacto-box{
+        flex-direction: column;
+    }
+    
+    .contacto-form-box{
+        height: 50%;
+        width: 100%;
+        
+    }
+
+    .input-label{
+        width: 93%;
+    }
 }
 
 /* FOOOTER*/
