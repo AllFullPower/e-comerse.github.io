@@ -112,16 +112,16 @@ clientServices.listaArticulos().then( data =>{
 })
 
 
-
-/* Buscador de articulos */
-
-itemServices.buscarArticulo()
-
-
 /* Admin Services */
 
 adminServices.longed()
 
+/* Buscador */
+if(screen.width <= 940){
+    itemServices.buscadorResponsive()
+}else{
+    itemServices.buscarArticulo()
+}
 
 
 

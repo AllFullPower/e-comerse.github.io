@@ -45,6 +45,7 @@
     border-radius: 12px;
     margin: 7rem;
     padding: 2rem;
+   
 }
 
 
@@ -204,3 +205,51 @@
 .descipcion-articulo-precio-precio{
     font-family: sans-serif;
 }   
+
+@media only screen and (max-width:940px){
+    .descripcion-container{
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--azul-oscuro);
+        border-radius: 12px;
+        margin: 7rem;
+        padding: 2rem;
+        flex-direction: column;
+    }
+    
+    .descricion-articulo-info{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0
+    }
+
+    .descripcion-articulo{
+        width: 100%;
+    }
+
+
+    .icono-carrito > img{
+        width: 1px;
+        height: 1px;
+    }
+    .descripcion-articulo-button {
+        width: 80%;
+        height: 5rem;
+        font-size: 1.2rem;
+        background-color: #0965dd;
+        color: #FFFCF2;
+        border: none;
+        transition: 250ms;
+        background-image: url(/./../assets/logos/shopping-cart.png);
+        background-position: 95%;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+        text-align: justify;
+        padding-left: 0;
+    }
+    
+    
+}

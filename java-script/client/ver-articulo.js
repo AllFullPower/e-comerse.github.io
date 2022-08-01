@@ -56,4 +56,9 @@ const armarInfoArticulo = (url, nombre, precio, descripcion, descuento, oferta) 
 }
 
 adminServices.longed();
-itemServices.buscarArticulo();0
+
+if(screen.width <= 940){
+    itemServices.buscadorResponsive()
+}else{
+    itemServices.buscarArticulo();
+}

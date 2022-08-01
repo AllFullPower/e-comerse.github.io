@@ -72,6 +72,10 @@ let modificadoresArticulo = item.querySelector('[data-permission]');
 
 
 
-itemServices.buscarArticulo()
 obteniendoInfoGrupo();
 adminServices.longed()
+if(screen.width < 940){
+    itemServices.buscadorResponsive()
+}else{
+    itemServices.buscarArticulo()
+}

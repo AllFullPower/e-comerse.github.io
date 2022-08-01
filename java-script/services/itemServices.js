@@ -244,6 +244,54 @@ const descuentoArticulo = (oferta, descuento, span, precio) =>{
     }
 }
 
+const buscadorResponsive = () =>{
+    let buscador = document.querySelector('.nav-buscador');
+    let containerPrincipalResponsive = document.querySelector('.ul-buscador-responsive')
+    clientServices.listaArticulos().then(articulos =>{
+        articulos.forEach(articulo =>{
+            let li = document.createElement('li')
+            li.setAttribute('id', articulo.id)
+            li.classList.add('item-nombre--reponsive');
+            let content = `<span class="nombre-responsive" id="${articulo.id}">${articulo.nombre}</span>`
+            li.innerHTML = content;
+            containerPrincipalResponsive.appendChild(li)
+            li.addEventListener('click', (item)=>{
+                let id = item.target.id
+                let link = `./screens/descripcion-producto.html?id=`;
+                if(window.location.pathname == '/index.html'){
+                    link = `./screens/descripcion-producto.html?id=`;
+                }else{
+                    link = `./descripcion-producto.html?id=`;
+                }
+                clientServices.editarArticulo(id).then(respuesta => window.location.href = `${link + respuesta.id}`);
+            })
+        })
+    })
+
+    buscador.addEventListener('input', function(){
+        if(this.value.length >= 1){
+            containerPrincipalResponsive.classList.remove('esconder')
+
+            let reguex = new RegExp(this.value, 'i');
+            let nombres = containerPrincipalResponsive.querySelectorAll('span');
+            nombres.forEach(nombre => {
+                if(!reguex.test(nombre.innerHTML)){
+                    nombre.parentElement.classList.add('esconder');
+                }else{
+                    nombre.parentElement.classList.remove('esconder');
+        
+                }
+            })
+
+        }else{
+            containerPrincipalResponsive.classList.add('esconder')
+        }
+
+
+    })
+
+}
+
 
 
 export const itemServices ={
@@ -252,5 +300,6 @@ export const itemServices ={
     verArticulo,
     buscarArticulo,
     bordesInput,
-    descuentoArticulo
+    descuentoArticulo,
+    buscadorResponsive
 }
